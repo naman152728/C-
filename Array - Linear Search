@@ -1,0 +1,47 @@
+// C++ Program to find A No. in an Array using Linear Search.
+
+#include <bits/stdc++.h>
+
+using namespace std;
+
+void FindNum (int arr [], int size, int num)
+{
+    int count = 1;
+    for (int i = 0; i < size; ++i)
+    {
+        if (num == arr[i])
+        {
+            count = 0; 
+        }
+    }
+
+    if (count == 0)
+    {
+        cout << num << " is Present in the Array.";
+    }
+    else 
+    {
+        cout << num << " is not Present in the Array.";
+    }
+}
+
+int main()
+{
+    int arr[100], size;
+    cout << "Enter the Size of an Array: ";
+    cin >> size;
+
+    for (int i = 0; i < size; ++i)
+    {
+        cin >> arr[i];
+    }
+
+    int num;
+    cout << "Enter the Num to Find in the Array: ";
+    cin >> num;
+
+    FindNum (arr, size, num);
+    
+    return 0;
+}
+
