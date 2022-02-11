@@ -41,8 +41,35 @@ int main()
     cout << "\n\n";
 
     AlterSwap (arr, size);
-
-
     
     return 0;
 }
+
+
+/*
+OUTPUT1:
+Enter the Size of an Array: 5
+Enter the Elements: 
+1
+2
+3
+4
+5
+Array Before Alternetive Swapping: 1 2 3 4 5 
+
+Array After Alternetive Swapping: 2 1 4 3 5
+
+
+OUTPUT2:
+Enter the Size of an Array: 6
+Enter the Elements: 
+12
+23
+34
+45
+56
+67
+Array Before Alternetive Swapping: 12 23 34 45 56 67 
+
+Array After Alternetive Swapping: 23 12 45 34 67 56
+*/
