@@ -1,0 +1,53 @@
+// Write a code to find a Num greater than another.
+
+#include <bits/stdc++.h>
+using namespace std;
+ 
+int main()
+{
+    //Enter your Code...
+    int num1, num2, num3;
+
+    cout << "Enter the Value for Num1: ";
+    cin >> num1;
+
+    cout << "Enter the Value for Num2: ";
+    cin >> num2;
+
+    cout << "Enter the Value for Num3: ";
+    cin >> num3;
+
+    if (num1 >= num2 && num1 >= num3)
+   {
+    cout << num1 << " is the Largest Number" << endl;
+   }
+
+   else if (num2 >= num3 && num2 >= num1)
+   {
+    cout << num2 << " is the Largest Number" << endl;
+   } 
+
+   else 
+   {
+    cout << num3 << " is the Largest Number" << endl;
+   }
+
+
+    return 0;
+}
+
+
+/*
+OUTPUT1:
+Enter the Value for Num1: 23
+Enter the Value for Num2: 12
+Enter the Value for Num3: 23
+23 is the Largest Number
+
+
+OUTPUT2:
+Enter the Value for Num1: -12
+Enter the Value for Num2: -34
+Enter the Value for Num3: 0  
+0 is the Largest Number
+*/
