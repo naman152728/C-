@@ -1,0 +1,56 @@
+// Print the sum of the first 5 decimal numbers from 1 to 5 in binary format.
+
+#include <bits/stdc++.h>
+using namespace std;
+
+int DecToBin(int num)
+{
+    int temp = num;
+    int sum = 0, i = 1;
+    while (num > 0)
+    {
+        int digit = num % 2;
+        sum = sum + digit * i;
+        num = num / 2;
+        i *= 10;
+    }
+
+    cout << temp << " = " << sum << endl;
+}
+
+int main()
+{
+    // Enter your Code...
+    int N[5], total = 0;
+
+    for (int i = 0; i < 5; i++)
+    {
+        cout << "Enter the Element" << i+1 << ": ";
+        cin >> N[i];
+        total += N[i];
+    }
+
+    DecToBin(total);
+
+    return 0;
+}
+
+
+/*
+OUTPUT1:
+Enter the Element1: 12
+Enter the Element2: 23
+Enter the Element3: 45
+Enter the Element4: 57
+Enter the Element5: 797
+934 = 1110100110
+
+
+OUTPUT2:
+Enter the Element1: -23
+Enter the Element2: 34
+Enter the Element3: 46
+Enter the Element4: -3
+Enter the Element5: 23
+77 = 1001101
+*/
